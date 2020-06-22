@@ -1,0 +1,125 @@
+﻿<Window x:Class="WpfClientCursova.Windows.RegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfClientCursova.Windows"
+        mc:Ignorable="d"
+        Title="RegistrationWindow"  Height="502" Width="415">
+    <StackPanel>
+        
+        <Grid Margin="0,50,0,0" Height="60" >
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150*"></ColumnDefinition>
+                <ColumnDefinition Width="275*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            
+            <TextBlock Grid.Column="0" Grid.Row="0"
+                       HorizontalAlignment="Left"  Margin="30,3,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top"/>
+            <TextBox  Grid.Column="1" Grid.Row="0" x:Name ="tbFirstName"
+                       HorizontalAlignment="Stretch" Margin="0,0,20,0" VerticalAlignment="Top" Height="23" TextWrapping="Wrap"/>
+            <TextBlock Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2" x:Name="tbWarningFirstName"
+                       HorizontalAlignment="Left" Margin="30,0,0,0" Text="" VerticalAlignment="Bottom" Foreground="Red" Height="32" Width="357" />
+        </Grid>
+
+        
+        <Grid Height="60" >
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150*"></ColumnDefinition>
+                <ColumnDefinition Width="275*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0" Grid.Row="0"
+                       HorizontalAlignment="Left"  Margin="30,3,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top"/>
+            <TextBox  Grid.Column="1" Grid.Row="0" x:Name ="tbLastName"
+                       HorizontalAlignment="Stretch" Margin="0,0,20,0" VerticalAlignment="Top" Height="23" TextWrapping="Wrap"/>
+            <TextBlock Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2" x:Name="tbWarningLastName"
+                       HorizontalAlignment="Left" Margin="30,0,0,0" Text="" VerticalAlignment="Bottom" Foreground="Red" Height="32" Width="357"/>
+        </Grid>
+
+        
+        <Grid Height="60" >
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150*"></ColumnDefinition>
+                <ColumnDefinition Width="275*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0" Grid.Row="0"
+                       HorizontalAlignment="Left"  Margin="30,3,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top"/>
+            <PasswordBox Grid.Column="1" Grid.Row="0" x:Name ="tbPassword"
+                       HorizontalAlignment="Stretch" Margin="0,0,20,0" VerticalAlignment="Top" Height="23"/>
+            <TextBlock Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2" x:Name="tbWarningPassword"
+                       HorizontalAlignment="Left" Margin="30,0,0,0" Text="" VerticalAlignment="Bottom" Foreground="Red" Height="32" Width="357"/>
+        </Grid>
+
+        
+        <Grid Height="60" >
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150*"></ColumnDefinition>
+                <ColumnDefinition Width="275*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0" Grid.Row="0"
+                       HorizontalAlignment="Left"  Margin="30,3,0,0" TextWrapping="Wrap" Text="Confirm Password" VerticalAlignment="Top"/>
+            <PasswordBox Grid.Column="1" Grid.Row="0" x:Name ="tbConfirmPassword"
+                       HorizontalAlignment="Stretch" Margin="0,0,20,0" VerticalAlignment="Top" Height="23"/>
+            <TextBlock Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2" x:Name="tbWarningConfirmPassword"
+                       HorizontalAlignment="Left" Margin="30,0,0,0" Text="" VerticalAlignment="Bottom" Foreground="Red" Height="32" Width="357"/>
+        </Grid>
+
+
+        <Grid Height="60" >
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150*"></ColumnDefinition>
+                <ColumnDefinition Width="275*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0" Grid.Row="0"
+                       HorizontalAlignment="Left"  Margin="30,3,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top"/>
+            <TextBox  Grid.Column="1" Grid.Row="0" x:Name ="tbEmail"
+                       HorizontalAlignment="Stretch" Margin="0,0,20,0" VerticalAlignment="Top" Height="23" TextWrapping="Wrap"/>
+            <TextBlock Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2" x:Name="tbWarningEmail"
+                       HorizontalAlignment="Left" Margin="30,0,0,0" Text="" VerticalAlignment="Bottom" Foreground="Red" Height="32" Width="357"/>
+        </Grid>
+
+        <Grid Height="60" >
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150*"></ColumnDefinition>
+                <ColumnDefinition Width="275*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0" Grid.Row="0"
+                       HorizontalAlignment="Left"  Margin="30,3,0,0" TextWrapping="Wrap" Text="Phone" VerticalAlignment="Top"/>
+            <TextBox  Grid.Column="1" Grid.Row="0" x:Name ="tbPhone"
+                       HorizontalAlignment="Stretch" Margin="0,0,20,0" VerticalAlignment="Top" Height="23" Text ="+" TextWrapping="Wrap" TextChanged="TbPhone_TextChanged"/>
+            <TextBlock Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2" x:Name="tbWarningPhone"
+                       HorizontalAlignment="Left" Margin="30,0,0,0" Text="" VerticalAlignment="Bottom" Foreground="Red" Height="32" Width="357"/>
+        </Grid>
+
+        <Button x:Name ="btnSend" Content="Send" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Width="76" Height="30" Click="BtnSend_Click"/>
+    </StackPanel>
+</Window>

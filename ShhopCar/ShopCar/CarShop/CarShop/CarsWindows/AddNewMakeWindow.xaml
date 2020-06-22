@@ -1,0 +1,32 @@
+﻿<Window x:Class="CarShop.AddNewMakeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarShop"
+        mc:Ignorable="d"
+        Title="Add new make" Height="540.896" Width="766.32">
+    <Grid >
+        <TextBox Name="txtMake" HorizontalAlignment="Left" Height="23" Margin="97,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Марка" HorizontalAlignment="Left" Margin="31,26,0,0" VerticalAlignment="Top"/>
+        <Button Name="btnAddMake" Content="Додати" HorizontalAlignment="Left" Margin="254,10,0,0" VerticalAlignment="Top" Width="149" Click="BtnAddMake_Click" Height="48"/>
+        <DataGrid x:Name="DBGrid" Height="288" AutoGenerateColumns="False"  ItemsSource="{Binding }"  Grid.Row="0"  Margin="10,111,0,0" VerticalAlignment="Top" Width="740">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}" />
+
+                <DataGridTextColumn Header="Марка" Binding="{Binding Name}"/>
+            </DataGrid.Columns>
+            <DataGrid.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Edit" x:Name="EditMenuItem" Click="EditMenuItem_Click" />
+                    <MenuItem Header="Delete" x:Name="DeleteMenuItem" Click="DeleteMenuItem_Click"/>
+                </ContextMenu>
+            </DataGrid.ContextMenu>
+        </DataGrid>
+        <WrapPanel Name="wpBTN" HorizontalAlignment="Left" Height="77" Margin="10,415,0,0" VerticalAlignment="Top" Width="740"/>
+        <Button IsEnabled="False" Content="Оновити" Name="btnUpdate" HorizontalAlignment="Left" Margin="420,10,0,0" VerticalAlignment="Top" Width="147" Height="48" Click="BtnUpdate_Click"/>
+        <Label Content="" Name="lblError" HorizontalAlignment="Left" Margin="41,58,0,0" VerticalAlignment="Top"/>
+        <Button Content="Пошук" HorizontalAlignment="Left" Name="btnSearch" Margin="584,10,0,0" VerticalAlignment="Top" Width="133" Height="48" Click="BtnSearch_Click"/>
+
+    </Grid>
+</Window>
